@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#social img {
+	height: 30px;
+	padding: 5px;
+}
+
+body {
+  font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 2rem;
+  background: #fff;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 75%;
+	height: auto;
+}
+#box {
+padding: 20px;
+}
+
+.modal-window {
+	position: fixed;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.15);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  width: 400px;
+	height: 30%;
+  position: relative;
+  margin: auto;
+	top: 35%;
+  background: rgba(255,255,255, 0.9);
+  color: #444;
+		border: 1pt solid #1d1d1b;
+
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: #1b1b1d;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000; 
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
